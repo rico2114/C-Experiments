@@ -1,0 +1,5 @@
+The arena runs faster when allocating big blocks and working over those blocks rather than creating new instances
+and moving data around.
+
+ The test arena_test took: 223ms to complete and allocated 140732797930312 bytes.
+ The test vector_test took: 257ms to complete and allocated 60195078161 bytes.
