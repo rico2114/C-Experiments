@@ -3,6 +3,7 @@
 //
 
 #include "tests/MemoryTest.h"
+#include "classes/VariadicClass.h"
 
 int main() {
     MemoryTest memory_test;
