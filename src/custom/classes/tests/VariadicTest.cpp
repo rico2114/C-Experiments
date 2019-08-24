@@ -5,7 +5,7 @@
 #include "../VariadicClass.h"
 #include "../VariadicFilter.h"
 
-int main()
+/*int main()
 {
     VariadicClass<int, double, std::string> variadic;
     variadic.Set<int>(4);
@@ -26,4 +26,4 @@ int main()
     std::cout << "int: " << val << "\n";
     std::cout << "string: " << x << "\n";
     return 0;
-}
+}*/

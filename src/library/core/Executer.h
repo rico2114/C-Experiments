@@ -2,9 +2,9 @@
 // Created by Juan Sebastian Quiceno Rico on 2019-08-18.
 //
 #include <iostream>
-#include "../memory/arenas/ArenaEfficiencyTest.h"
-#include "../memory/vector/VectorEfficiencyTest.h"
 #include <chrono>
+#include "../skeleton/BaseTest.h"
+#include "../traits/Traits.h"
 
 namespace Core {
     

@@ -8,6 +8,7 @@
 
 #include "../core/TestSet.h"
 #include "../macros/Macros.h"
+#include "../memory/vector/VectorEfficiencyTest.h"
 
 class MemoryTest : public TestSet {
 
