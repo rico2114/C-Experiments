@@ -4,7 +4,7 @@
 //
 // Created by Juan Sebastian Quiceno Rico on 2019-08-22.
 //
-int main() {
+/*int main() {
     ColumnA column_a;
     ColumnB column_b;
     ColumnC column_c;
@@ -22,4 +22,4 @@ int main() {
     // struct calls
     //a.DoStruct(variadic);
     return 0;
-}
+}*/

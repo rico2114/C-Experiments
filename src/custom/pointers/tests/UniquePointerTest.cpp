@@ -26,3 +26,35 @@
     }
     return 0;
 }*/
+
+int attempt(std::unique_ptr<int>& ref) {
+    std::unique_ptr<int> tmp = std::move(ref);
+    return 5;
+}
+
+std::unique_ptr<int> attempt2(std::unique_ptr<int>&& ref) {
+    // if we return ref we are trying to copy ref so it can be returned
+    // this happens: call to implicitly-deleted copy constructor of 'std::unique_ptr<int>'
+    return std::move(ref);
+}
+
+int main() {
+
+    std::string first = "hola";
+    std::string second = "pedro";
+
+    // I moved the content of the second element into the first
+    // Remember C++ Is a language designed by copy
+    // Unique pointers are moved by COPY
+    first = std::move(second);
+    std::cout << "First: " << first << " Second: " << second;
+
+    std::unique_ptr<int> val = std::make_unique<int>(5);
+    attempt(val);
+    //int a = 6;
+    std::unique_ptr<int> a = attempt2(std::make_unique<int>(5));
+    std::cout << "\n a: " << *(a) << std::endl;
+
+    std::cout << "\n val:" << *val << std::endl;
+
+}
