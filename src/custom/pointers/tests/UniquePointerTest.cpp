@@ -28,7 +28,14 @@
 }*/
 
 int attempt(std::unique_ptr<int>& ref) {
-    std::unique_ptr<int> tmp = std::move(ref);
+    *ref = 3;
+    //std::unique_ptr<int> tmp = std::move(ref);
+    return 5;
+}
+
+int attempt3(std::unique_ptr<const int>& ref) {
+    //*ref = 3;
+    //std::unique_ptr<int> tmp = std::move(ref);
     return 5;
 }
 
@@ -38,7 +45,7 @@ std::unique_ptr<int> attempt2(std::unique_ptr<int>&& ref) {
     return std::move(ref);
 }
 
-int main() {
+/*int main() {
 
     std::string first = "hola";
     std::string second = "pedro";
@@ -51,10 +58,11 @@ int main() {
 
     std::unique_ptr<int> val = std::make_unique<int>(5);
     attempt(val);
+    //attempt3(val);
     //int a = 6;
     std::unique_ptr<int> a = attempt2(std::make_unique<int>(5));
     std::cout << "\n a: " << *(a) << std::endl;
 
     std::cout << "\n val:" << *val << std::endl;
 
-}
+}*/
